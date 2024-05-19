@@ -1,0 +1,95 @@
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+  /* background-color:antiquewhite; */
+}
+.banner{ 
+  height: 200px;
+  background-color: black;   
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.5rem;
+  color: white;
+  font-size: 50px;
+  margin: auto;
+}
+
+@media screen and (max-width:600px){
+  .banner{
+      letter-spacing: 8px;
+  }
+}
+nav{                                        
+  background-color: rgb(53, 53, 53);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li{
+  padding: 10px;
+}
+nav .items{
+  padding: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav .items:hover{
+  background-color: orange;
+  border-radius: 8px;
+}
+
+.filter a:hover{
+color: red;
+}
+
+.bg-category{
+  background-color: azure;
+}
+
+.category{
+  text-align: center;
+  background-color: rgb(218, 240, 22);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  
+}
+
+.price{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer{
+  height: 200px;
+  background-color: rgb(89, 88, 88);
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  margin-top: 40px;
+  letter-spacing: 10px;
+}
+
