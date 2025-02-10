@@ -1,38 +1,123 @@
-.App {
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  /* background-color:antiquewhite; */
+}
+
+.banner{ 
+  height: 200px;
+  background-color: black;   
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.5rem;
+  color: white;
+  font-size: 50px;
+  margin:auto;
+}
+
+.heading{
+  margin-left: 420px;
+}
+@media screen and (max-width:600px){
+  .banner{
+      letter-spacing: 8px;
+      font-size: 40px;
+  }
+  .heading{
+    margin-left: auto;
+  }
+  
+  nav{
+    position: absolute;
+  }
+  
+  .content{
+    position: relative;
+    /* display: none; */
+  }
+
+  .filter-top{
+    display: none;
+  }
+}
+
+nav{                                        
+  background-color: rgb(53, 53, 53);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li{
+  padding: 10px;
+}
+
+nav .items{
+  padding: 8px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav .items:hover{
+  background-color: orange;
+  border-radius: 8px;
+}
+
+
+.filter a:hover{
+color: red;
+}
+
+.bg-category{
+  background-color: azure;
+}
+
+.category{
+  text-align: center;
+  background-color: rgb(218, 240, 22);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  
+}
+
+.price{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.content{
+  top: 320px;
+}
+
+.pagination1 {
+  margin-top: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pagination1 button{
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slash{
+  font-size: 30px;
+  margin-right: 4px;
+  
+  /* font-weight:bold; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer{
+  height: 200px;
+  background-color: rgb(89, 88, 88);
   color: white;
+  text-align: center;
+  padding-top: 100px;
+  margin-top: 40px;
+  letter-spacing: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
